@@ -7,6 +7,8 @@ target 'reactNativeDeviceInfoExample' do
 
   # Pods for reactNativeDeviceInfoExample
   
+  pod 'RNDeviceInfo', :path => '../node_modules/react-native-device-info'
+
   target 'reactNativeDeviceInfoExampleTests' do
     inherit! :search_paths
     # Pods for testing
