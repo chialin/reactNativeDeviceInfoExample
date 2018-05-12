@@ -11,6 +11,7 @@ import {
   Text,
   View
 } from 'react-native';
+import DeviceInfo from 'react-native-device-info';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -22,13 +23,16 @@ const instructions = Platform.select({
 type Props = {};
 export default class App extends Component<Props> {
   render() {
+    const systemName = DeviceInfo.getSystemName();
+    const deviceName = DeviceInfo.getDeviceName();
+
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          {`系統：${systemName}`}
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit App.js
+          {`裝置名稱：${deviceName}`}
         </Text>
         <Text style={styles.instructions}>
           {instructions}
