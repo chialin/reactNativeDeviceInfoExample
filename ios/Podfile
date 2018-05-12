@@ -6,7 +6,7 @@ target 'reactNativeDeviceInfoExample' do
   # use_frameworks!
 
   # Pods for reactNativeDeviceInfoExample
-
+  
   target 'reactNativeDeviceInfoExampleTests' do
     inherit! :search_paths
     # Pods for testing
